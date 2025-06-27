@@ -1,0 +1,14 @@
+dex:
+  enabled: false
+
+configs:
+  cm:
+    admin.enabled: "false"
+    url: https://argocd.local:8081
+    oidc.config: |
+      name: Keycloak
+      issuer: http://keycloak.local/realms/master
+      clientID: argocd
+      clientSecret: <sua_client_secret_aqui>
+      requestedScopes: ["openid", "profile", "email"]
+      insecure: true

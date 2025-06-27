@@ -1,0 +1,23 @@
+## values.yaml para Bitnami Keycloak
+replicaCount: 1
+
+image:
+  registry: docker.io
+  repository: bitnami/keycloak
+  tag: latest
+
+service:
+  type: LoadBalancer
+  port: 8080
+
+auth:
+  adminUser: admin
+  adminPassword: changeme
+
+keycloak:
+  ## Exemplo de configuração de ingress (se necessário)
+  ingress:
+    enabled: false
+    hostname: keycloak.local
+    annotations: {}
+    tls: []
