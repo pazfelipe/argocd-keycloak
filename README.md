@@ -192,7 +192,7 @@ configs:
       insecure: true
 ```
 
-Note o novo campo `admin.enabled`
+Note o campo `admin.enabled`. Para fazer login somente via `keycloak`, deixe como `false`, caso contrário, pode remover esse campo ou mantê-lo como `true`.
 
 Salve e aplique:
 
