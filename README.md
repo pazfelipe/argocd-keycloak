@@ -24,7 +24,7 @@ Este README descreve os passos para implantar e configurar o Keycloak e o Argo C
 
 ```bash
 # Remover cluster existente
-k3d cluster delete k3d-dev`
+k3d cluster delete k3d-dev
 ```
 ```bash
 # Criar novo cluster
