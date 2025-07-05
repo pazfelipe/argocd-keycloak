@@ -108,7 +108,7 @@ sudo kubectl port-forward -n ingress-nginx svc/ingress-nginx-controller 80:80
 ```
 ```bash
 # Argo CD → porta 443 do host acessível em 8081
-git kubectl port-forward svc/argocd-server -n argocd 8081:443
+kubectl port-forward svc/argocd-server -n argocd 8081:443
 ```
 
 ### 8. Acessos
